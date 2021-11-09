@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".water">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Water"
+        android:textColor="@color/teal_700"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        style="@style/font"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="What is your body's daily need of water?"
+        android:textColor="@color/teal_700"
+        android:textSize="25dp"
+         />
+
+    <TextView
+        android:id="@+id/waterNededEDT"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:text="For your weight you need -->"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+       />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:background="@drawable/water"
+        />
+
+
+    <Button
+        android:id="@+id/bmi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:onClick="bmi"
+        android:text="Calculate BMI"
+        android:textColor="#FFFEFE"
+        android:textSize="15sp"
+       android:gravity="center"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_700"
+        android:text="Back Home"
+        android:textColor="#FFFEFE"
+        android:textSize="15sp"
+        android:onClick="back"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
